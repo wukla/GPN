@@ -1,0 +1,28 @@
+ */
+PSCTL DEFINE 0x8F /* Program Store R/W Control */
+REVID DEFINE 0xAD /* Revision ID */
+RSTSRC DEFINE 0xEF /* Reset Source Configuration/Status */
+VDM0CN DEFINE 0xFF /* VDD Monitor Control */
+
+/*-------------------------------------------------------------------------
+ *   CRC
+ *-------------------------------------------------------------------------*/
+
+CRC0AUTO DEFINE 0x96 /* CRC0 Automatic Control Register */
+CRC0CN DEFINE 0x91 /* CRC0 Control */
+CRC0CNT DEFINE 0x97 /* CRC0 Automatic Flash Sector Count */
+CRC0DATA DEFINE 0xD9 /* CRC0 Data Output */
+CRC0FLIP DEFINE 0x95 /* CRC0 Bit Flip */
+CRC0IN DEFINE 0x94 /* CRC Data Input */
+
+/*-------------------------------------------------------------------------
+ *   Port 3
+ *-------------------------------------------------------------------------*/
+
+P3 DEFINE 0xB0 /* Port 3 Latch */
+P3_P30 DEFINE 0xB0.0
+P3_P31 DEFINE 0xB0.1
+P3_P32 DEFINE 0xB0.2
+P3_P33 DEFINE 0xB0.3
+P3_P34 DEFINE 0xB0.4
+P3_P35 DEFINE 0xB0.5

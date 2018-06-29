@@ -1,0 +1,30 @@
+ char ADC0LTH; /* ADC0 Less-Than Compare Word High */
+  struct /* ADC0 Less-Than Compare Word High */
+  {
+    unsigned char ADC0LTH0 : 1;
+    unsigned char ADC0LTH1 : 1;
+    unsigned char ADC0LTH2 : 1;
+    unsigned char ADC0LTH3 : 1;
+    unsigned char ADC0LTH4 : 1;
+    unsigned char ADC0LTH5 : 1;
+    unsigned char ADC0LTH6 : 1;
+    unsigned char ADC0LTH7 : 1;
+  } ADC0LTH_bit;
+} @ 0xC6;
+
+/*-------------------------------------------------------------------------
+ *   CRC
+ *-------------------------------------------------------------------------*/
+
+__sfr __no_init volatile union
+{
+  unsigned char CRC0IN; /* CRC Data Input */
+  struct /* CRC Data Input */
+  {
+    unsigned char CRC0IN0 : 1;
+    unsigned char CRC0IN1 : 1;
+    unsigned char CRC0IN2 : 1;
+    unsigned char CRC0IN3 : 1;
+    unsigned char CRC0IN4 : 1;
+    unsigned char CRC0IN5 : 1;
+    unsigned char

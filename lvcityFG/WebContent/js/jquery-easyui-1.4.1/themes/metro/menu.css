@@ -1,0 +1,81 @@
+ */
+  struct /* Timer/Counter Control */
+  {
+    unsigned char IT0 : 1;
+    unsigned char IE0 : 1;
+    unsigned char IT1 : 1;
+    unsigned char IE1 : 1;
+    unsigned char TR0 : 1;
+    unsigned char TF0 : 1;
+    unsigned char TR1 : 1;
+    unsigned char TF1 : 1;
+  } TCON_bit;
+} @ 0x88;
+__sfr __no_init volatile union
+{
+  unsigned char TMR2H; /* Timer/Counter 2 High */
+  struct /* Timer/Counter 2 High */
+  {
+    unsigned char TMR2H0 : 1;
+    unsigned char TMR2H1 : 1;
+    unsigned char TMR2H2 : 1;
+    unsigned char TMR2H3 : 1;
+    unsigned char TMR2H4 : 1;
+    unsigned char TMR2H5 : 1;
+    unsigned char TMR2H6 : 1;
+    unsigned char TMR2H7 : 1;
+  } TMR2H_bit;
+} @ 0xCD;
+__sfr __no_init volatile union
+{
+  unsigned char TH1; /* Timer/Counter 1 High */
+  struct /* Timer/Counter 1 High */
+  {
+    unsigned char TH10 : 1;
+    unsigned char TH11 : 1;
+    unsigned char TH12 : 1;
+    unsigned char TH13 : 1;
+    unsigned char TH14 : 1;
+    unsigned char TH15 : 1;
+    unsigned char TH16 : 1;
+    unsigned char TH17 : 1;
+  } TH1_bit;
+} @ 0x8D;
+__sfr __no_init volatile union
+{
+  unsigned char TMOD; /* Timer/Counter Mode */
+  struct /* Timer/Counter Mode */
+  {
+    unsigned char T0M0 : 1;
+    unsigned char T0M1 : 1;
+    unsigned char C_T0 : 1;
+    unsigned char GATE0 : 1;
+    unsigned char T1M0 : 1;
+    unsigned char T1M1 : 1;
+    unsigned char C_T1 : 1;
+    unsigned char GATE1 : 1;
+  } TMOD_bit;
+} @ 0x89;
+__sfr __no_init volatile union
+{
+  unsigned char CLKSEL; /* Clock Select */
+  struct /* Clock Select */
+  {
+    unsigned char CLKSEL0 : 1;
+    unsigned char CLKSEL1 : 1;
+    unsigned char CLKSEL2 : 1;
+    unsigned char  : 1;
+    unsigned char CLKDIV0 : 1;
+    unsigned char CLKDIV1 : 1;
+    unsigned char CLKDIV2 : 1;
+    unsigned char CLKRDY : 1;
+  } CLKSEL_bit;
+} @ 0xA9;
+__sfr __no_init volatile union
+{
+  unsigned char CKCON; /* Clock Control */
+  struct /* Clock Control */
+  {
+    unsigned char SCA0 : 1;
+    unsigned char SCA1 : 1;
+    unsig

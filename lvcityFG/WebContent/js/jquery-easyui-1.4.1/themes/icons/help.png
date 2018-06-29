@@ -1,0 +1,47 @@
+ */
+  struct /* Timer/Counter Control */
+  {
+    unsigned char IT0 : 1;
+    unsigned char IE0 : 1;
+    unsigned char IT1 : 1;
+    unsigned char IE1 : 1;
+    unsigned char TR0 : 1;
+    unsigned char TF0 : 1;
+    unsigned char TR1 : 1;
+    unsigned char TF1 : 1;
+  } TCON_bit;
+} @ 0x88;
+__sfr __no_init volatile union
+{
+  unsigned char TMR2H; /* Timer/Counter 2 High */
+  struct /* Timer/Counter 2 High */
+  {
+    unsigned char TMR2H0 : 1;
+    unsigned char TMR2H1 : 1;
+    unsigned char TMR2H2 : 1;
+    unsigned char TMR2H3 : 1;
+    unsigned char TMR2H4 : 1;
+    unsigned char TMR2H5 : 1;
+    unsigned char TMR2H6 : 1;
+    unsigned char TMR2H7 : 1;
+  } TMR2H_bit;
+} @ 0xCD;
+__sfr __no_init volatile union
+{
+  unsigned char TH1; /* Timer/Counter 1 High */
+  struct /* Timer/Counter 1 High */
+  {
+    unsigned char TH10 : 1;
+    unsigned char TH11 : 1;
+    unsigned char TH12 : 1;
+    unsigned char TH13 : 1;
+    unsigned char TH14 : 1;
+    unsigned char TH15 : 1;
+    unsigned char TH16 : 1;
+    unsigned char TH17 : 1;
+  } TH1_bit;
+} @ 0x8D;
+__sfr __no_init volatile union
+{
+  unsigned char TMOD; /* Timer/Counter Mode */
+  struct /* Timer/Co
